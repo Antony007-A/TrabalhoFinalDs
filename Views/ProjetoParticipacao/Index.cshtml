@@ -1,0 +1,25 @@
+@model List<ProjetoParticipacaoMVC.Models.ProjetoParticipacaoViewModel>
+
+<h2>Participações</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Projeto</th>
+            <th>Usuário</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var p in Model)
+        {
+            <tr>
+                <td>@p.idProjeto</td>
+                <td>@p.idUsuario</td>
+                <td>@p.qtde</td>
+                <td>@p.valor</td>
+            </tr>
+        }
+    </tbody>
+</table>
