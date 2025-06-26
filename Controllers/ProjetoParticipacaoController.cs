@@ -12,7 +12,7 @@ namespace ProjetoParticipacaoMVC.Controllers
         public ProjetoParticipacaoController(IHttpClientFactory httpClientFactory)
         {
             _httpClient = httpClientFactory.CreateClient();
-            _httpClient.BaseAddress = new Uri("https://SEU_DOMINIO_SOMEE.com/");
+            _httpClient.BaseAddress = new Uri("http://www.antony.somee.com");
         }
 
         public async Task<IActionResult> Projeto(int idProjeto)
